@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Danica ✨</title>
+  <link rel="stylesheet" href="design.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="stars"></div>
+  <div class="stars2"></div>
+  <div class="stars3"></div>
+  <div class="floating-particles"></div>
+
+  <!-- Music Control -->
+  <button class="musicButton" onclick="toggleMusic()" id="musicBtn">
+    <i class="fas fa-music"></i>
+    <span id="musicText">Music</span>
+  </button>
+
+  <audio id="bgMusic" loop>
+    <source src="happy-birthday.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- CURSOR -->
+  <div class="cursor"></div>
+  <div class="cursor-trail"></div>
+
+  <!-- INTRO SCREEN -->
+  <div id="introScreen" class="stage center active">
+    <div class="intro-container">
+      <div class="intro-glow">
+        <div class="intro-emoji">🎉</div>
+        <h1 class="intro-title">Happy Birthday!</h1>
+        <p class="intro-text">Holaaa Madam Princess! 🎀<br>I prepared something <span class="magic-text">magical</span> for you...<br>Ready ka na ba? ✨</p>
+        <button class="start-button glow-btn" onclick="startExperience()">
+          <span>Let's Begin</span>
+          <i class="fas fa-sparkles"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOGIN SCREEN -->
+  <div id="loginScreen" class="stage center hidden">
+    <div class="login-container">
+      <div class="card login-card">
+        <div class="card-header magic-shake">
+          <i class="fas fa-lock sparkle-icon"></i>
+          <h2>Enter the Magic</h2>
+        </div>
+        <p class="login-subtitle">Type your name to unlock the celebration ✨</p>
+        <div class="input-group">
+          <div class="input-wrapper">
+            <input type="text" id="password" placeholder="Your magical name..." class="magic-input" />
+            <div class="input-glow"></div>
+          </div>
+          <button class="unlock-btn glow-btn" onclick="checkPassword()">
+            <span>Unlock Magic</span> 
+            <i class="fas fa-gift"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BALLOON STAGE -->
+  <div id="balloonStage" class="stage center hidden">
+    <div class="balloon-container">
+      <div class="card balloon-card">
+        <div class="stage-header">
+          <h2><i class="fas fa-balloons"></i> Pop All Balloons!</h2>
+          <div class="progress-container">
+            <div class="progress-bar">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <span id="progressText">0/5</span>
+          </div>
+        </div>
+        <div id="balloons" class="balloon-wrap"></div>
+        <button id="nextBtn" class="next-btn glow-btn hidden" onclick="goToCake()">
+          <i class="fas fa-cake-candles"></i> To the Cake!
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CAKE STAGE -->
+  <div id="cakeStage" class="stage center hidden">
+    <div class="cake-container">
+      <div class="card cake-card">
+        <div class="stage-header">
+          <h2><i class="fas fa-eye"></i> Make a Wish!</h2>
+          <p>Close your eyes, make a wish, then blow ✨</p>
+        </div>
+        <div class="cake-center">
+          <div class="cake-wrapper">
+            <div class="cake">
+              
+              <!-- Cake Layers -->
+              <div class="layers">
+                <div class="layer top-layer">
+                  <div class="frosting"></div>
+                </div>
+                <div class="layer middle-layer">
+                  <div class="frosting"></div>
+                </div>
+                <div class="layer bottom-layer">
+                  <div class="frosting"></div>
+                </div>
+              </div>
+              
+              <!-- Candles -->
+              <div class="candles">
+                <div class="candle">
+                  <div class="flame"></div>
+                </div>
+                <div class="candle">
+                  <div class="flame"></div>
+                </div>
+                <div class="candle">
+                  <div class="flame"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="blow-btn glow-btn" onclick="blowCandle()">
+            <i class="fas fa-wind"></i> Blow Candles
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONFIRMATION SCREEN -->
+  <div id="readConfrmation" class="stage center hidden">
+    <div class="confirm-container">
+      <div class="card confirm-card">
+        <div class="heart-float">
+          <i class="fas fa-heart"></i>
+        </div>
+        <h2>Ready to read my special message? 💌</h2>
+        <div class="button-group">
+          <button id="yes-button" class="yes-btn glow-btn" onclick="goToLetter()">
+            <span>Yes!</span> <i class="fas fa-envelope-open"></i>
+          </button>
+          <button id="no-button" class="no-btn wiggle" onclick="nopeAnimation()">
+            Nope 😜
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ENVELOPE STAGE -->
+<div id="envelopeStage" class="stage center hidden">
+  <div class="letter-container">
+    <div class="card envelope-card">
+
+      <div id="envelope" class="envelope" onclick="openEnvelope()">
+        <div class="envelope-front">
+          <div class="envelope-flap"></div>
+          <div class="envelope-body"></div>
+        </div>
+
+        <div class="envelope-glow">
+          <i class="fas fa-envelope"></i>
+          <span>Click to Open</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FINAL LETTER STAGE -->
+<div id="finalStage" class="stage center hidden">
+  <div class="letter-container">
+    <div class="card letter-card final-clean">
+
+      <div id="letterBox" class="letter">
+        <div class="paper">
+          <div class="paper-fold"></div>
+          <p id="finalText"></p>
+        </div>
+      </div>
+
+      <div class="final-buttons">
+        <button class="celebrate-btn glow-btn hidden" id="celebrateBtn" onclick="launchConfetti()">
+          <i class="fas fa-rocket"></i> Celebrate! 🎉
+        </button>
+        <button class="replay-btn glow-btn hidden" id="replayBtn" onclick="replayGame()">
+          <i class="fas fa-redo"></i> Play Again ✨
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+  <!-- MESSAGE POPUP -->
+  <div id="tempMessage"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
