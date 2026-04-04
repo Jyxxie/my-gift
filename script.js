@@ -375,25 +375,25 @@ setTimeout(() => {
 }
 
 function typeText() {
-  const msg = `Happy Birthday Danica!
+  const msg = `Happy Birthday, Danica! 🎉
 
 I just want to take a moment to greet you and remind you how special this day is—because it's the day you were born, and the day the world became a little brighter with you in it.
 
-I thank God for your life, for your strength, your smile, and all the little things that make you uniquely you. I pray that He continues to guide, protect, and bless you in everything you do. Sana bigyan ka pa Niya ng more happiness, peace of mind, at success sa buhay.
+I thank God for your life—for your strength, your smile, and all the little things that make you uniquely you. I pray that He continues to guide, protect, and bless you in everything you do. Sana bigyan ka pa Niya ng more happiness, peace of mind, at success sa buhay.
 
 I also thank God for allowing our paths to cross. Sa dami ng pwedeng mangyari sa mundo, nakakatuwa isipin na nagkaroon tayo ng chance na magkakilala at mag-usap. I believe everything happens for a reason, and I'm truly grateful na isa ka sa naging part ng araw-araw ko.
 
 Thank you for being someone who brings good vibes, laughter, and random moments na somehow nagpapasaya ng ordinary days. From our simple chats to our kulitan, you might not even notice it, pero you really can make someone smile.
 
-I made this little website for you—not perfect, but it's something I put time, effort, and thought into just for you. A simple way para mapasaya ka kahit papaano, at ma-feel mo na appreciated ka.
+I made this website for you—not because kailangan, but because I wanted to. I spent my time, effort, and thoughts para makagawa ng something na kahit papaano makakapagpasaya sa’yo on your special day. Hindi man siya perfect HAHAHA, pero galing siya sa sincere intention ko.
 
-I hope today brings you happiness, good food (lalo na yong cravings mo HAHAHA), and moments that remind you how special you are. You deserve all the good things, hindi lang today, but every day.
+I hope today brings you happiness, good food (lalo na yung cravings mo HAHAHA), and moments that remind you how special you are. You deserve all the good things—not just today, but every day.
 
-Stay as you are—fun to talk to, genuine, at someone na lucky ang mga taong nakapaligid sa'yo.
+Stay as you are—fun to talk to, genuine, and someone na lucky ang mga taong nakapaligid sa’yo.
 
 As you celebrate your birthday, sana tuloy-tuloy pa yung unexpected blessings sa life mo, just like how you see this year as something special. Tuloy mo lang pagiging strong mo, and always take care of yourself, lalo na sa work mo.
 
-Enyour your day, madam princess HAHAHA 
+Enjoy your day, Madam Princess HAHAHA 😆 kain ka ng madami, and don’t forget to smile (bagay sa’yo yun).
 
 —From someone who truly appreciates you 🤍`;
 
