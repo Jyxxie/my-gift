@@ -567,7 +567,7 @@ body {
   text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
-/* Realistic Cake */
+/* Cake */
 .cake-container {
   background: rgba(255,255,255,0.15);
   backdrop-filter: blur(20px);
@@ -910,8 +910,8 @@ body {
   z-index: 0;
 }
 
-/* HEART SEAL (optional cute detail) */
-.envelope::before {
+/* HEART SEAL */
+/*.envelope::before {
   content: '💗';
   position: absolute;
   top: 50%;
@@ -920,7 +920,7 @@ body {
   font-size: 2rem;
   z-index: 3;
   animation: heartbeat 1.5s infinite;
-}
+} */
 
 /* GLOW TEXT */
 .envelope-glow {
